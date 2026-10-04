@@ -17,7 +17,7 @@ function cap(v) { return v ? v.charAt(0).toUpperCase() + v.slice(1) : 'Not recor
 function euro(v) { return `€${Number(v || 0).toFixed(2)}`; }
 
 function Logo({ small = false }) {
-  return <img className={small ? 'logo small' : 'logo'} src="/fredas-logo.png" alt="Freda's" />;
+  return <img className={small ? 'logo small' : 'logo'} src="/Freida’s Retro Orange Splash Logo.png" alt="Freda's" />;
 }
 
 function Toast({ message, tone = 'info', onClose }) {
@@ -45,7 +45,7 @@ function Login({ onLogin }) {
   return <div className="login-wrap">
     <form className="login-card" onSubmit={submit}>
       <Logo />
-      <h1>Freda’s Operations</h1>
+      <h1>Freida’s Operations</h1>
       <p className="sub">Simple daily records for staff, sales, stock and tomorrow’s needs.</p>
       {error && <div className="notice error">{error}</div>}
       <label className="field"><span>Username</span><input value={username} onChange={e=>setUsername(e.target.value)} autoComplete="username" /></label>
