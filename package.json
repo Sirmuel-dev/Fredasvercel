@@ -2,7 +2,10 @@
   "name": "fredas-fullstack-supabase",
   "private": true,
   "version": "2.0.0",
-  "workspaces": ["client", "server"],
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "dev": "concurrently -k \"npm run dev -w server\" \"npm run dev -w client\"",
     "build": "npm run build -w client",
@@ -15,5 +18,8 @@
   },
   "engines": {
     "node": ">=22"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
